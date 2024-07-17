@@ -1,0 +1,64 @@
+print("BMR is an abbreviation for basal metabolic rate, which is the amount \n of energy a body needs to maintain homeostasis, or basic life-sustaining functions,\n while at rest. It's also known as resting metabolic rate (RMR), \n which is the number of calories burned while staying in bed all day.\n BMR accounts for about 60% of a person's daily energy expenditure")
+gen=input("enter your gender if your men enter 1 or your woman enter 2")
+ 
+   
+if gen=="1":
+    age_in_years_M=int(input("Sir please enter your age  :"))
+    weight_in_kg_M=int(input("sir please enter you weight in kg : "))
+    height_in_cm_M=int(input("sir please enter your height in cm :"))
+    BMR_M=88.362+(13.397*weight_in_kg_M)+(4.799*height_in_cm_M)-(5.677*age_in_years_M)
+    
+    print(BMR_M)
+elif gen=="2":
+    age_in_years=int(input("Mam please enter your age  :"))
+    weight_in_kg=int(input("Mam please enter you weight in kg : "))
+    height_in_cm=int(input("Mam please enter your height in cm :"))
+    BMR_W=447.593+(9.247*weight_in_kg)+(3.098*height_in_cm)-(4.330*age_in_years)
+
+    print(BMR_W)
+else:
+    print("your entered invalid number .")
+
+output :
+BMR is an abbreviation for basal metabolic rate, which is the amount 
+ of energy a body needs to maintain homeostasis, or basic life-sustaining functions,
+ while at rest. It's also known as resting metabolic rate (RMR), 
+ which is the number of calories burned while staying in bed all day.
+ BMR accounts for about 60% of a person's daily energy expenditure
+enter your gender if your men enter 1 or your woman enter 21
+Sir please enter your age  :22
+sir please enter you weight in kg : 49
+sir please enter your height in cm :165
+1411.756
+
+
+===================================================
+   def calculate_BMR(age,weight,height,gender):
+    if gender.lower()=="male":
+        bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age)
+            
+    elif gender.lower()=="female":
+        bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age)
+    else:
+        print("gender must be 'male' or 'female'")
+    return round(bmr)
+
+def main():
+    age=int(input("Enter your age:"))
+    weight=float(input("Enter your Weight :"))
+    height=float(input("enter your Height :"))
+    gender=input("Enter your gender:")
+    
+    bmr = calculate_BMR(age,weight,height,gender)
+    print(f"your BMR is: {bmr}")
+
+if __name__ == "__main__":
+    main()
+
+output:
+Enter your age:22
+Enter your Weight :49
+enter your Height :165
+Enter your gender:male
+your BMR is: 1412
+
