@@ -1,0 +1,38 @@
+Write a Python program that calculates the Ideal Body Weight (IBW) from a user's height and gender. 
+The IBW is an estimate of a healthy weight based on height.
+The formula for calculating IBW is different for men and women:
+For men:
+IBW=50+2.3×(height in inches−60)
+For women:
+IBW=45.5+2.3×(height in inches−60)
+
+
+  what is idw.?
+  Ideal Body Weight (IBW) is an estimate of a healthy body weight based on a person's height and gender.
+  It is calculated using different formulas for
+  men and women to determine a target weight range that is considered healthy.
+
+solution:
+
+def IDL_Calculation(height,gender):
+    if gender.lower()=="men":
+        ibw = 50+2.3*(height - 60)
+            
+    elif gender.lower()=="women":
+        ibw = 45.5+2.3*(height - 60)
+    else:
+        print("gender must be 'male' or 'female'")
+    return round(ibw)
+def main():
+    height=float(input("enter your height in inches:"))
+    gender=input("enter your gender :")
+    ibw = IDL_Calculation(height, gender)
+    print(f"Your Ideal Body Weight is:{ibw} kg")
+    
+if __name__ ==  "__main__":
+    main()
+
+output: 
+enter your height in inches:71.2
+enter your gender :men
+Your Ideal Body Weight is:76 kg
