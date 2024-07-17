@@ -1,0 +1,15 @@
+Create a program that calculates the number of days, weeks, and months left if we live until 100 years old. 
+The program should take your current age as input and output a message with the time left in this format:
+
+  solution:-
+
+  name = input("enter your name :-")
+age = input("enter your age :-")
+year = 92 - int(age)
+weeks = 52 * year
+months = 12 * year
+days = 365 * year
+
+print(f" hi {name} You have {days:,} days, {weeks:,} weeks, and {months:,} months left.")
+
+  output:- hi veera You have 25,185 days, 3,588 weeks, and 828 months left
