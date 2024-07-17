@@ -11,3 +11,18 @@ Day 1 - String Manipulation
 String Concatenation is done with the "+" sign.
 e.g. print("Hello " + "world")
 New lines can be created with a backslash and n.
+
+# There are two variables, a and b
+a = input()
+b = input()
+# Create a third variable to help switch the values
+c = a
+a = b
+b = c
+
+print("a: " + a)
+print("b: " + b)
+
+output:
+a:kiran
+b:kanna
