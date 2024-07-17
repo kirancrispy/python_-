@@ -1,3 +1,15 @@
+Write a Python program that calculates the Basal Metabolic Rate (BMR) from a user's age, weight, height, and gender. The BMR is the number of calories required to keep your body functioning at rest.
+
+The formula for calculating BMR is different for men and women:
+
+For men:
+BMR=88.362+(13.397×weight in kg)+(4.799×height in cm)−(5.677×age in years)
+BMR=88.362+(13.397×weight in kg)+(4.799×height in cm)−(5.677×age in years)
+
+For women:
+BMR=447.593+(9.247×weight in kg)+(3.098×height in cm)−(4.330×age in years)
+BMR=447.593+(9.247×weight in kg)+(3.098×height in cm)−(4.330×age in years)
+========================================================================================================================================>
 print("BMR is an abbreviation for basal metabolic rate, which is the amount \n of energy a body needs to maintain homeostasis, or basic life-sustaining functions,\n while at rest. It's also known as resting metabolic rate (RMR), \n which is the number of calories burned while staying in bed all day.\n BMR accounts for about 60% of a person's daily energy expenditure")
 gen=input("enter your gender if your men enter 1 or your woman enter 2")
  
@@ -32,7 +44,7 @@ sir please enter your height in cm :165
 1411.756
 
 
-===================================================
+============================================================================================================>
    def calculate_BMR(age,weight,height,gender):
     if gender.lower()=="male":
         bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age)
