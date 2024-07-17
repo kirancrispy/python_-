@@ -6,3 +6,8 @@ output :
 A 'single quote' inside a double quote
 A "double quote" inside a single quote
 Alternatively you can just "escape" the quote
+
+
+input function:
+input()
+print(len(input()))
