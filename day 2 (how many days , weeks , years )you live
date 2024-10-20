@@ -12,4 +12,4 @@ days = 365 * year
 
 print(f" hi {name} You have {days:,} days, {weeks:,} weeks, and {months:,} months left.")
 
-  output:- hi veera You have 25,185 days, 3,588 weeks, and 828 months left
+  output:- hi veera You have 25,185 days, 3,588 weeks, and 828 months left .
